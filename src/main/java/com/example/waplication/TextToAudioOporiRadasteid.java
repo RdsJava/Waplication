@@ -37,7 +37,8 @@ public class TextToAudioOporiRadasteid {
             line = line.replaceAll("\\s+", " ").trim().concat("\n");
             line = line.replaceAll("(?m)^[ \t]*\r?\n", ""); //удалением пустых строк
             line = line.replaceAll("\\s", "_"); //Замена пробелов на '_'
-            line = line.replaceAll("[^А-ё 0-9_]", ""); //Замена символов на '_'
+            line = line.replaceAll("[^А-ё 0-9 _]", ""); //Удаление символов кроме букв и цифр
+            line = line.replaceAll("__", "_");// Замена двойных на одинарные
 
             if (!line.equals("")) {
 

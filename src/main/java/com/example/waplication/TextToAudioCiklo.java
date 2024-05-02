@@ -37,7 +37,8 @@ public class TextToAudioCiklo {
             line = line.replaceAll("\\s+", " ").trim().concat("\n");
             line = line.replaceAll("(?m)^[ \t]*\r?\n", ""); //удалением пустых строк
             line = line.replaceAll("\\s", "_"); //Замена пробелов на '_'
-            line = line.replaceAll("[^А-ё 0-9]", ""); //Замена пробелов на '_'
+            line = line.replaceAll("[^А-ё 0-9 _]", ""); //Удаление символов кроме букв и цифр
+            line = line.replaceAll("__", "_");// Замена двойных на одинарные
 
             if (!line.equals("")) {
 
@@ -83,8 +84,8 @@ public class TextToAudioCiklo {
         renameFileF.rename(filePathName + fileName + endFileName, duration.durationFileOnly48kGh(fileLanguage), ".wav");
 
         String listString = String.join(",", language);
-        listString = listString.replace(".wav,F:\\textToAudio/" + checkLanguagePath + "/Small/", "");
-        listString = listString.replace("F:\\textToAudio/" + checkLanguagePath + "/Big/", "");
+        listString = listString.replace(".wav,F:\\textToAudio/" + checkLanguagePath, "");
+        listString = listString.replace("F:\\textToAudio/" + checkLanguagePath, "");
         listString = listString.replace(checkEndLanguage, "");
 
         System.out.println(endFileName + " с удалением путей++ " + listString);

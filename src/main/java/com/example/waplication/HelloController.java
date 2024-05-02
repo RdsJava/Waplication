@@ -2,9 +2,7 @@ package com.example.waplication;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 
 import java.io.*;
@@ -35,16 +33,15 @@ public class HelloController {
     @FXML
     private String text;
 
-
     @FXML
     void checkBoxInitialize(ActionEvent actionEvent) {
         String d = texts.getText();
 
         //Запись в файл текста:
         try {
-            FileWriter writer = new FileWriter("F:\\textToAudio/doc.txt");
-            writer.write(d);
-            writer.flush();//Данные, которые вы записываете в Writer, иногда временно хранятся в буфере, метод flush() используется для сброса (flush) всех данных из буфера в целевой объект.
+            FileWriter writers = new FileWriter("F:\\textToAudio/doc.txt");
+            writers.write(d);
+            writers.flush();//Данные, которые вы записываете в Writer, иногда временно хранятся в буфере, метод flush() используется для сброса (flush) всех данных из буфера в целевой объект.
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
