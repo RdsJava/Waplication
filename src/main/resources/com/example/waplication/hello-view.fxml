@@ -14,17 +14,21 @@
           <AnchorPane>
                <children>
                   <ScrollPane prefHeight="498.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                  <TextArea fx:id="fx" prefHeight="498.0" prefWidth="300.0" text="&#10;&#10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <TextArea fx:id="text" prefHeight="498.0" prefWidth="300.0" text="&#10;&#10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="102.0">
                <children>
-                  <CheckBox layoutX="45.0" layoutY="40.0" mnemonicParsing="false" text="Циклохладвит" />
-                  <CheckBox layoutX="45.0" layoutY="60.0" mnemonicParsing="false" text="Номерной хладавит" />
-                  <CheckBox layoutX="45.0" layoutY="80.0" mnemonicParsing="false" text="Ритмохладавит" />
-                  <CheckBox layoutX="45.0" layoutY="100.0" mnemonicParsing="false" text="Радастеид--100" />
-                  <CheckBox layoutX="45.0" layoutY="120.0" mnemonicParsing="false" text="Радастеид" />
-                  <Button layoutX="69.0" layoutY="186.0" mnemonicParsing="false" text="Создать" />
+                   <CheckBox fx:id="checkBoxOpHl" layoutX="45.0" layoutY="20.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Опоры Хладавит"/>
+                   <CheckBox fx:id="checkBoxCiklo" layoutX="45.0" layoutY="40.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Циклохладвит" />
+                  <CheckBox fx:id="checkBoxNomernoi" layoutX="45.0" layoutY="60.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Номерной хладавит" />
+                  <CheckBox fx:id="checkBoxRitmo" layoutX="45.0" layoutY="80.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Ритмохладавит" />
+                   <CheckBox fx:id="checkBoxOpRd" layoutX="45.0" layoutY="100.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Опоры Радастеид" />
+                  <CheckBox fx:id="checkBoxR100" layoutX="45.0" layoutY="120.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Радастеид--100" />
+                  <CheckBox fx:id="checkBoxRd" layoutX="45.0" layoutY="140.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Радастеид" />
+                   <CheckBox fx:id="checkBoxRozOp" layoutX="45.0" layoutY="160.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Розуз-опоры" />
+                   <Button fx:id="buttonCreation" layoutX="69.0" layoutY="200" mnemonicParsing="false" onAction="#buttonClick" text="Создать" />
+
                </children>
             </AnchorPane>
         </items>
