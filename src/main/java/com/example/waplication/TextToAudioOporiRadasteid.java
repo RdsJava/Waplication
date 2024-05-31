@@ -87,8 +87,8 @@ public class TextToAudioOporiRadasteid {
         renameFileF.rename(filePathName + fileName + endFileName, duration.durationFileOnly48kGh(fileLanguage), ".wav");
 
         String listString = String.join(",", language);
-        listString = listString.replace(".wav,F:\\textToAudio/" + checkLanguagePath, "");
-        listString = listString.replace("F:\\textToAudio/" + checkLanguagePath, "");
+        listString = listString.replace(".wav,F:\\YandexDisk/textToAudio/" + checkLanguagePath, "");
+        listString = listString.replace("F:\\YandexDisk/textToAudio/" + checkLanguagePath, "");
         //listString = listString.replace(checkEndLanguage, "");
 
         System.out.println(endFileName + " с удалением путей++ " + listString);

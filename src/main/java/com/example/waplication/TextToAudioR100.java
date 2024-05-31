@@ -118,7 +118,7 @@ public class TextToAudioR100 {
         listString = listString.replace("(знаки препинания)" , "");
         listString = listString.replace("(отделяет слова)", "");
         listString = listString.replace("(отделяет предложения)", "");
-        listString = listString.replace("F:\\textToAudio/R_AV/","");
+        listString = listString.replace("F:\\YandexDisk/textToAudio/R_AV/","");
         listString = listString.replace(".wav","");
 
 

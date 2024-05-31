@@ -24,7 +24,7 @@
                   <CheckBox fx:id="checkBoxNomernoi" layoutX="45.0" layoutY="60.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Номерной хладавит" />
                   <CheckBox fx:id="checkBoxRitmo" layoutX="45.0" layoutY="80.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Ритмохладавит" />
                    <CheckBox fx:id="checkBoxOpRd" layoutX="45.0" layoutY="100.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Опоры Радастеид" />
-                  <CheckBox fx:id="checkBoxR100" layoutX="45.0" layoutY="120.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Радастеид--100" />
+                  <CheckBox fx:id="checkBoxR100" layoutX="45.0" layoutY="120.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Радастеид-100" />
                   <CheckBox fx:id="checkBoxRd" layoutX="45.0" layoutY="140.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Радастеид" />
                    <CheckBox fx:id="checkBoxRozOp" layoutX="45.0" layoutY="160.0" mnemonicParsing="false" onAction="#checkBoxInitialize" text="Розуз-опоры" />
                    <Button fx:id="buttonCreation" layoutX="69.0" layoutY="200" mnemonicParsing="false" onAction="#buttonClick" text="Создать" />

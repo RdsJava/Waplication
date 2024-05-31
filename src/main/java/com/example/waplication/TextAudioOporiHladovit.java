@@ -64,8 +64,8 @@ public class TextAudioOporiHladovit {
             string = string.substring(0, string.length() - 1);
         }
 
-        string = ">" + string; //Открытие языка
-        string = string + "$"; // Закрытие языка
+        string = "<" + string; //Открытие языка
+        string = string + ">"; // Закрытие языка
 
         System.out.println("string " + string);
         String[] language = new String[string.length()];
@@ -88,8 +88,8 @@ public class TextAudioOporiHladovit {
         renameFileF.rename(filePathName + fileName + endFileName, duration.durationFileOnly48kGh(fileLanguage), ".wav");
 
         String listString = String.join(",", language);
-        listString = listString.replace(".wav,F:\\textToAudio/" + checkLanguagePath, "");
-        listString = listString.replace("F:\\textToAudio/" + checkLanguagePath, "");
+        listString = listString.replace(".wav,F:\\YandexDisk/textToAudio/" + checkLanguagePath, "");
+        listString = listString.replace("F:\\YandexDisk/textToAudio/" + checkLanguagePath, "");
         //listString = listString.replace(checkEndLanguage, "");
 
         System.out.println(endFileName + " с удалением путей++ " + listString);

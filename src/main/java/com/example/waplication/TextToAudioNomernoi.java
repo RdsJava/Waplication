@@ -84,8 +84,8 @@ public class TextToAudioNomernoi {
             renameFileF.rename(filePathName + fileName + endFileName, duration.durationFileOnly48kGh(fileLanguage), ".wav");
 
             String listString = String.join(",", language);
-            listString = listString.replace(".wav,F:\\textToAudio/" + checkLanguagePath, "");
-            listString = listString.replace("F:\\textToAudio/" + checkLanguagePath, "").replaceAll("\\d", "");
+            listString = listString.replace(".wav,F:\\YandexDisk/textToAudio/" + checkLanguagePath, "");
+            listString = listString.replace("F:\\YandexDisk/textToAudio/" + checkLanguagePath, "").replaceAll("\\d", "");
             listString = listString.replace(checkEndLanguage, "");
             listString = listString.replace(".wav", "");
 
